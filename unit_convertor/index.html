@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="scripts.js"></script>
+        <style>
+            table  {
+                margin-top: 30%;
+                    }
+
+            body{
+                background-color:aqua;
+                }
+            p{
+                text-align:center;
+                background-color:white;
+            }
+            footer {
+                position:fixed;
+                left:0px;
+                bottom:-7px;
+                height:30px;
+                width:100%;
+                    }
+        </style>
+        <title>Unit Convertor</title>
+      </head>
+      <body>
+        <nav class="navbar  fixed-top navbar-dark bg-dark">
+            <h2 style="color:white;margin-left:40%;">Unit Convertor</h2>
+        </nav>
+        <div class="container" style="width:40%">
+            <table class="table  table-dark">
+                <tbody>
+                    <tr>
+                        <td colspan="1"><span><i>Input value</i></span><input class="form-control" type="number" id="input"/></td> 
+                        <td colspan="1"><span><i>Result</i></span><input class="form-control" type="text" id="result" disabled/></td> 
+                        <td><span><i>Clear</i></span><input type="button" class="btn btn-danger btn-block" value="C" onclick="clr()"/> </td>
+                        <!--to clear the display box clr() function-->
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="form-control" id="Unit" onclick="callme()">
+                                <option>Select Unit</option>
+                                <option value="kg">Kilograms</option>
+                                <option value="cel">Celsius</option>
+                                <option value="mtr">Metre</option>
+                                <option value="pnd">Pounds</option>
+                                <option value="fnt">Farenheit</option>
+                                <option value="yrd">Sq. yards</option>
+                                <option value="feet">Sq. Feet</option>
+                              </select>
+                        </td>
+                        <td>
+                            <input class="form-control" type="text" id="cnvto" disabled/>
+                        </td>
+                        <td><input type="button" class="btn btn-success btn-block" value="Go" onclick="solve()"/> </td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <p>Designed by: Saurabh Gangwar ,
+                <a href="mailto:saurabhgangwar621@gmail.com" target="_blank">
+                    Mail at: saurabhgangwar621@gmail.com</a>
+            </p>      
+        </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body> 
+</html>
