@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="script.js"></script>
+        <style>
+            body {
+                background-image: url(bg.jpg);
+                background-size: cover;
+            }
+            p{
+                text-align:center;
+                background-color:white;
+            }
+            footer {
+                position:fixed;
+                left:0px;
+                bottom:-7px;
+                height:30px;
+                width:100%;
+                    }
+            input[type=text] {
+                background-color: pink;
+                }
+            input[type="text"]:disabled {
+                background-color: pink;
+                color: red;
+                text-align: center;
+                font-weight: bold;
+                font-family: cursive;
+                }
+            .container{
+                padding:10%;
+            }
+            
+        </style>
+        <link rel="icon" type="image/png" href="favicon.ico"/>
+        <title>Love Calculator</title>
+      </head>
+      <body>
+        <nav class="navbar  navbar-toggleable-xl  navbar-inverse  navbar-dark bg-dark">
+            <h3 style="color:red;margin:auto">Love Calculator</h3>
+        </nav>
+        <div class="container">
+            <div class="row hide">
+                <div class="col"><input class="form-control" type="text" id="result" placeholder="Your Name" disabled
+                    style="display: none;"/></div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col">
+                    <div class="row"><input class="form-control" type="text" id="input1" placeholder="Your Name"/></div>
+                    <br>
+                    <!--<div class="row"><img src=first.png style="width:250px;height:170px;margin:auto;"></div>-->
+                    <br>
+                    <div class="row"><input class="form-control" type="text" id="input2" placeholder="Partner's Name"/></div>
+                    <br>
+                    <br>
+                    <div class="row"><input type="button" class="btn btn-warning btn-block" value="Calculate Love" onclick="cal()"/></div>
+                    <br>
+                </div>
+                <div class="col">
+                    <div class="row"><img src="seecond.webp" style="width: 300px;height:208px;"></div>
+                </div>
+            </div>
+            
+        <br>
+        <br>
+        <footer>
+            <p>Designed by: Saurabh Gangwar ,
+                <a href="mailto:saurabhgangwar621@gmail.com" target="_blank">
+                    Mail at: saurabhgangwar621@gmail.com</a>
+            </p>      
+        </footer>
+      
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body> 
+</html>
