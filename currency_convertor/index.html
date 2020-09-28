@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <script src="scripts.js"></script>
+        <style>
+            body{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-image:url(bg.jpg);
+                }
+            p{
+                text-align:center;
+                background-color:white;
+            }
+            footer {
+                position:fixed;
+                left:0px;
+                bottom:-7px;
+                height:30px;
+                width:100%;
+                    }
+            .container{
+                padding:9%;
+            }            
+        </style>
+        <link rel="icon" type="image/png" href="favi.png"/>
+        <title>Currency Convertor</title>
+      </head>
+      <body>
+        <nav class="navbar  navbar-toggleable-xl  navbar-inverse navbar-dark bg-dark">
+            <h2 style="color:white;margin:auto;">Currency Convertor</h2>
+        </nav>
+        <div class="container">
+            <table class="table  table-dark">
+                <tbody>
+                    <tr>
+                        <td colspan="1"><span><i>Input</i></span><input class="form-control" type="number" id="input"/></td> 
+                        <td colspan="1"><span><i>Result</i></span><input class="form-control" type="text" id="result" disabled/></td> 
+                        <td><span><i>Clear</i></span><input type="button" class="btn btn-danger btn-block" value="C" onclick="clr()"/> </td>
+                        <!--to clear the display box clr() function-->
+                    </tr>
+                    <tr>
+                        <td>
+                            <select class="form-control" id="curr1" onclick="callme()">
+                                <option selected disabled> Select Currency </option>
+                                <option value="ruppy">Rupees</option>
+                                <option value="dollar">US Dollar</option>
+                                <option value="yen">Japanese Yen</option>
+                                <option value="pound">Pound</option>
+                                <option value="euro">Euro</option>
+                                <option value="franc">Swiss franc</option>
+                              </select>
+                        </td>
+                        <td>
+                            <select class="form-control" id="curr2" onclick="callme2()" >
+                                <option selected disabled>Select Currency</option>
+                                <option value="ruppy">Rupees</option>
+                                <option value="dollar">US Dollar</option>
+                                <option value="yen">Japanese Yen</option>
+                                <option value="pound">Pound</option>
+                                <option value="euro">Euro</option>
+                                <option value="franc">Swiss franc</option>
+                              </select>
+                        </td>
+                        <td><input type="button" class="btn btn-success btn-block" value="Go" onclick="solve()"/> </td> 
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <footer>
+            <p>Designed by: Saurabh Gangwar ,
+                <a href="mailto:saurabhgangwar621@gmail.com" target="_blank">
+                    Mail at: saurabhgangwar621@gmail.com</a>
+            </p>      
+        </footer>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body> 
+</html>
